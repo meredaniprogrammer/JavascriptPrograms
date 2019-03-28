@@ -13,3 +13,23 @@ myProfile.surname = 'Mere'
 myProfile.firstname = 'Daniel'
 myProfile.age = 23
 console.log(`His name is ${myProfile.surname} and his other name is ${myProfile.firstname}. He is ${myProfile.age} years old, he stays in ${myProfile.city}`)
+
+//Object with functions
+let myBook = {
+    title: 'My Transition Hours',
+    author: 'Goodluck Jonathan',
+    pageCount: 562
+}
+
+let myOtherBook = {
+    title: 'The Elevated Man',
+    author: 'Mere Daniel',
+    pageCount: 564
+}
+let getBookSummary = function(book){
+    console.log(`${book.title} by ${book.author}`)
+}
+getBookSummary(myBook)
+getBookSummary(myOtherBook)
+
+//Displays: Transition Hours by Goodluck Jonathan and The Elevated Man by Mere Daniel
