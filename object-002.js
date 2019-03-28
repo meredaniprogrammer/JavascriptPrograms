@@ -33,3 +33,17 @@ getBookSummary(myBook)
 getBookSummary(myOtherBook)
 
 //Displays: Transition Hours by Goodluck Jonathan and The Elevated Man by Mere Daniel
+
+//Oject built with expense tracking
+
+let myAccount = {
+    name: 'Mere Daniel',
+    expenses: 0,
+    income: 0
+}
+
+let addAccount = function(account, amount){
+    account.expenses = account.expenses + amount
+}
+addAccount(myAccount, 2500)
+console.log(myAccount)
