@@ -27,3 +27,20 @@ let restaurant = {
 let status = restaurant.checkAvailability(4)
 console.log(status)
 
+//Updated
+let restaurant = {
+    name: 'Mr Bigs',
+    guestCapacity: 275,
+    guestCount: 260,
+    checkAvailability: function(partySize){
+        let seatsleft = this.guestCapacity - this.guestCount
+        if(partySize <= seatsleft){
+            return 'Welcome! we have seats available for you'
+        }else {
+            return 'Sorry, we have got no space for your booking'
+        }
+    }
+}
+let status = restaurant.checkAvailability(4)
+console.log(status)
+
